@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+//import "fmt"
 
 // sum sums all elements of the list recursively and return
 func sum(list []int) int {
@@ -10,6 +10,6 @@ func sum(list []int) int {
 	return list[0] + sum(list[1:])
 }
 
-func main() {
-	fmt.Println(sum([]int{2, 4, 6}))
-}
+//func main() {
+//	fmt.Println(sum([]int{2, 4, 6}))
+//}

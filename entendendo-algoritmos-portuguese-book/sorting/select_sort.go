@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package sorting
 
 // searchMinor returns the index of the lowest value in the list
 func searchMinor(list []int) *int {
@@ -15,8 +13,8 @@ func searchMinor(list []int) *int {
 	return &lowIndex
 }
 
-// selectSort teratively finds the smallest element in the list, appends it to a new list, and removes it from the original list until sorted. 
-func selectSort(list []int) []int {
+// SelectSort teratively finds the smallest element in the list, appends it to a new list, and removes it from the original list until sorted. 
+func SelectSort(list []int) []int {
 	new := make([]int, 0, len(list))
 	for range list {
 		lowIndex := searchMinor(list)
@@ -26,7 +24,3 @@ func selectSort(list []int) []int {
 	return new
 }
 
-func main() {
-	list := []int{6, 1, 3, 5, 2, 5}
-	fmt.Printf("%v\n", selectSort(list))
-}

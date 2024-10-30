@@ -1,7 +1,7 @@
-package main
+package stack
 
 import (
-	"fmt"
+	//"fmt"
 	"errors"
 )
 
@@ -32,33 +32,33 @@ func (s *stack) pop() (int, error) {
 	return 0, errors.New("stask is empty")
 }
 
-func main() {
-	s := stack{}
-	s.push(3)
-	s.push(2)
-	s.push(1)
-
-	pop1, err := s.pop()
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("stash pop() = %d\n", pop1)
-
-	pop2, err := s.pop()
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("stash pop() = %d\n", pop2)
-
-	pop3, err := s.pop()
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("stash pop() = %d\n", pop3)
-
-	pop4, err := s.pop()
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("stash pop() = %d\n", pop4)
-}
+//func main() {
+//	s := stack{}
+//	s.push(3)
+//	s.push(2)
+//	s.push(1)
+//
+//	pop1, err := s.pop()
+//	if err != nil {
+//		panic(err)
+//	}
+//	fmt.Printf("stash pop() = %d\n", pop1)
+//
+//	pop2, err := s.pop()
+//	if err != nil {
+//		panic(err)
+//	}
+//	fmt.Printf("stash pop() = %d\n", pop2)
+//
+//	pop3, err := s.pop()
+//	if err != nil {
+//		panic(err)
+//	}
+//	fmt.Printf("stash pop() = %d\n", pop3)
+//
+//	pop4, err := s.pop()
+//	if err != nil {
+//		panic(err)
+//	}
+//	fmt.Printf("stash pop() = %d\n", pop4)
+//}

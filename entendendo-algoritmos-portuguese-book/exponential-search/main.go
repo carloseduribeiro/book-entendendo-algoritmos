@@ -32,7 +32,7 @@ func exponentialSearch(list []int, item int) *int {
 	return binarySearch(list, item, int(right/2), right)
 }
 
-func main() {
-	ar1 := []int{1, 2, 3, 4, 5}
-	println(*exponentialSearch(ar1, 4))
-}
+//func main() {
+//	ar1 := []int{1, 2, 3, 4, 5}
+//	println(*exponentialSearch(ar1, 4))
+//}
