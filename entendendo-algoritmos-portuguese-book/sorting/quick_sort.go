@@ -5,19 +5,19 @@ func QuickSort(list []int) []int {
 		return list
 	}
 	pivot := len(list) - 1
-	lowers := []int{}
-	for i := range list[1:] {
-		if list[i] <= pivot {
-			lowers = append(lowers, pivot)
+	var lowers []int
+	var highers []int
+	for i := range list {
+		if i == pivot {
+			continue
 		}
-	}
-	righers := []int{}
-	for j := range list[1:] {
-		if list[j] > pivot {
-			righers = append(righers, pivot)
+		if list[i] < list[pivot] {
+			lowers = append(lowers, list[i])
+		} else {
+			highers = append(highers, list[i])
 		}
 	}
 	result := QuickSort(lowers)
-	result = append(result, pivot)
-	return append(result, QuickSort(righers)...)
+	result = append(result, list[pivot])
+	return append(result, QuickSort(highers)...)
 }

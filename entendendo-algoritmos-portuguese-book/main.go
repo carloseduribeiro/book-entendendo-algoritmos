@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"entendendo-algoritmos/sorting"
+	"fmt"
 )
 
 func main() {
